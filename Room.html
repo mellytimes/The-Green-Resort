@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>The Green Resort & Spa</title>
+    <style>
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #0f4927;
+            transition: width 0.5s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="sticky top-0 z-50 bg-gradient-to-r from-white to-green-100 border-b border-green-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="text-xl font-semibold text-green-700">
+                The Green Resort & Spa
+            </div>
+            <div class="flex gap-8">
+                <a class="nav-link text-gray-600 hover:text-gray-900 transition" href="index.html">Home</a>
+                <a class="nav-link text-gray-600 hover:text-gray-900 transition" href="Room.html">Rooms</a>
+                <a class="nav-link text-gray-600 hover:text-gray-900 transition" href="facilities.html">Facilities</a>
+                <a class="nav-link text-gray-600 hover:text-gray-900 transition" href="gallery.html">Gallery</a>
+                <a class="nav-link text-gray-600 hover:text-gray-900 transition" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-20 bg-gradient-to-b from-white to-green-100">
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl font-bold text-center mb-12 text-gray-800">Our Current Available Rooms</h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="./img/photo-1566665797739-1674de7a421a.jpg" alt="Deluxe Room"
+                        class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold mb-2 text-gray-800">ห้องพักแบบดีลักซ์</h2>
+                        <p class="text-gray-600 mb-4">ห้องพักขนาดใหญ่พร้อมวิวสวน</p>
+                        <p class="text-green-600 font-bold text-xl">$150/night</p>
+                        <button class="mt-4 w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 transition">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="./img/photo-1590490360182-c33d57733427.jpg" alt="Suite"
+                        class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold mb-2 text-gray-800">ห้องสวีทสำหรับผู้บริหาร</h2>
+                        <p class="text-gray-600 mb-4">ห้องสวีทหรูพร้อมสปา</p>
+                        <p class="text-green-600 font-bold text-xl">$250/night</p>
+                        <button class="mt-4 w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 transition">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="./img/photo-1582719478250-c89cae4dc85b.jpg" alt="Villa"
+                        class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold mb-2 text-gray-800">วิลล่าแบบส่วนตัว</h2>
+                        <p class="text-gray-600 mb-4">วิลล่าส่วนตัวพร้อมสระว่ายน้ำ</p>
+                        <p class="text-green-600 font-bold text-xl">$400/night</p>
+                        <button class="mt-4 w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 transition">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <img src="./img/kalahari-resorts-conventions.jpg" alt="Villa"
+                        class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold mb-2 text-gray-800">ห้องพักแบบประหยัด</h2>
+                        <p class="text-gray-600 mb-4">ห้องพักขนาดเล็กพร้อมสิ่งอำนวยความสะดวกพื้นฐาน</p>
+                        <p class="text-green-600 font-bold text-xl">$50/night</p>
+                        <button class="mt-4 w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 transition">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
